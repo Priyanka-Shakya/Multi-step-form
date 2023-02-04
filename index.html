@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-step form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="leftcontainer">
+            <div class="steps" id="step-1">
+                <div class="button" id="buttu-1">
+                    <button class="btn" id="smile1">1</button>
+                </div>
+                <!-- <p>Step1</p> -->
+                <p class="content">YOUR INFO</p>
+            </div>
+            <div class="steps" id="step-2">
+                <div class="button" id="buttu-2">
+                    <button class="btn" id="smile2">2</button>
+                </div>
+                <!-- <p>Step2</p> -->
+                <p class="content">SELECT PLANE</p>
+            </div>
+            <div class="steps" id="step-3">
+                <div class="button" id="buttu-3">
+                    <button class="btn" id="smile3">3</button>
+                </div>
+                <!-- <p>step3</p> -->
+                <p class="content">ADD-ONS</p>
+            </div>
+            <div class="steps" id="step-4">
+                <div class="button" id="buttu-4">
+                    <button class="btn" id="smile4">4</button>
+                </div>
+                <!-- <p>step4</p> -->
+                <p class="content">SUMMARY</p>
+            </div>
+        </div>
+        <div class="rightcontainer">
+            <h3>Personal Info</h3>
+            <p style="font-size: 14px; padding-bottom: 23px ">Please provide your name, email address,and Phone Number
+            </p>
+            <div class="data">
+                <div class="name">Name*</div>
+                <input class="input" type="text" placeholder="Name">
+            </div>
+            <div class="data">
+                <div class="name">Email*</div>
+                <input class="input" type="email" placeholder="eg. priyankaShakya@gmail.com">
+            </div>
+            <div class="data">
+                <div class="name">Phone Number*</div>
+                <input class="input" type="phone" placeholder="eg. 9599761404 ">
+            </div>
+            <div class="buttonbelow">
+                <button id="btn" class="oneclick" onclick="myfunction1()" >Next Step</button>
+            </div>
+        </div>
+
+        <div class="thirdcontainer">
+            <div class="thirdheading">
+                <h2>Select your plan</h2>
+                <p class="thirdpara">You have the option of monthly,and yearly billing</p>
+            </div>
+            <div class="dibbe">
+                <div class="smalldibbe" id="d-1">
+                    <img class="icons" src="/images/icon-arcade.svg" alt="">
+                    <p class="iconText1">Arcade</p>
+                    <p class="iconText2">$9/mo</p>
+                </div>
+                <div class="smalldibbe" id="d-2">
+                    <img class="icons" src="/images/icon-advanced.svg" alt="">
+                    <p class="iconText1">Advanced</p>
+                    <p class="iconText2">$15/mo</p>
+                </div>
+                <div class="smalldibbe" id="d-3">
+                    <img class="icons" src="/images/icon-pro.svg" alt="">
+                    <p class="iconText1">Pro</p>
+                    <p class="iconText2">$12/mo</p>
+                </div>
+            </div>
+            <div class="flatter">
+                <h6 class="month">monthly</h6>
+                <div class="centre">
+                    <input class="checkcheck" type="checkbox" name="">
+                </div>
+                <h6 class="month">Yearly</h6>
+            </div>
+            <div class="bottom">
+                <p id="goback">Go back</p>
+                <div class="butsecond">
+                    <button id="btn" class="btn2" class="twoclick" onclick="myfunction2()" >Next Step</button>
+                </div>
+            </div>
+        </div>
+        <div class="fourthcontainer">
+            <div class="thirdheading">
+                <h2>Pick add-ons</h2>
+                <p class="thirdpara">Add ons help you to enhance your gaming experience.</p>
+            </div>
+            <div class="fbox" id="fbox-1">
+                <input class="fcheck" type="checkbox">
+                <p class="fhead1">Online Service</p>
+                <p class="fhead2">Access to multilayer game</p>
+                <p class="symbol">+$1/mo</p>
+            </div>
+            <div class="fbox" id="fbox-2">
+                <input class="fcheck" type="checkbox">
+                <p class="fhead1">Large Storage</p>
+                <p class="fhead2">Extra 1TB of cloud save</p>
+                <p class="symbol">+$2/mo</p>
+            </div>
+            <div class="fbox" id="fbox-3">
+                <input class="fcheck" type="checkbox">
+                <p class="fhead1">Customizable Profile</p>
+                <p class="fhead2">Custom theme on your profile</p>
+                <p class="symbol">+$3/mo</p>
+            </div>
+            <div class="fbottom">
+                <p id="fgoback">Go back</p>
+                <div class="fbutsecond">
+                    <button id="fbtn" class="fbtn2" class="threeclick" onclick="myfunction3()">Next Step</button>
+                </div>
+            </div>
+        </div>
+        <div class="fifthcontainer">
+            <div class="thirdheading">
+                <h2>Finishing-Up</h2>
+                <p class="thirdpara">Double-check everything looks OK before confirming</p>
+            </div>
+            <div class="fvbox">
+                <p class="arcade">Arcade (Monthly)</p>
+                <p class="links"><a href="https://google.com" target="_blank">Change</a></p>
+                <p class="symbol">+$3/mo</p>
+            </div>
+            <div class="fvbox">
+                <p class="arcade">Online Services</p>
+                <p class="links">Larger storage</p>
+                <p class="symbol">+$3/mo</p>
+            </div>
+            <div class="fvbox">
+                <p class="arcade">Total</p>
+                <p class="links">(per month)</p>
+                <p class="symbol">+$3/mo</p>
+            </div>
+            <div class="fbottom">
+                <p id="fgoback">Go back</p>
+                <div class="fbutsecond">
+                    <button id="fbtn" class="fbtn2" class="click4" onclick="myfunction4()">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thanku">
+        <h1>😊Thank you </h1>
+        <h2>You have Successfully Registered👍</h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
